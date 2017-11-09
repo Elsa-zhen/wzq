@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>五子棋</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+</head>
+<body>
+<!--背景图开始-->
+    <div class="bgbox">
+        <div class="bgimg"></div>
+    </div>
+<!--背景图结束-->
+
+<!--游戏菜单开始-->
+<div class="box">
+    <div class="menu">游戏菜单</div>
+    <input type="button" value="开始游戏" id="start">
+    <input type="button" value="游戏模式" id="moshi">
+    <div class="rj">
+        <input type="radio" name="mode" id="renji">
+        人机对战
+    </div>
+    <div class="zr">
+        <input type="radio" checked name="mode" id="zhenren">
+        真人对战
+    </div>
+    <input type="button" value="重新开始" class="restart">
+    <input type="button" value="生成棋谱" class="qipu">
+    <a href="#" id="download">下载棋谱</a>
+</div>
+<!--游戏菜单结束-->
+<!--棋盘开始-->
+<div class="container">
+    <canvas width="600" height="600"></canvas>
+</div>
+<!--棋盘结束-->
+
+<!--遮罩开始-->
+<div class="mask">
+    <span></span>
+    <div class="imgbox"></div>
+</div>
+<!--遮罩结束-->
+<!--右上角音乐开始-->
+<div class="music"><span class="iconfont">&#xe62b;</span></div>
+<audio src="music/sky.mp3"></audio>
+<!--音乐结束-->
+</body>
+<script src="js/index.js"></script>
+</html>
